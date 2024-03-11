@@ -16,25 +16,27 @@
 <body>
   <header class="h-[9vh] bg-white text-black ">
 
-  <nav class="flex justify-between h-10">
+  <nav class="flex justify-between h-10 ">
     <ul class="flex gap-4 mt-4">
-      <li><a href="#"class="h-full"><img src="/FE-CAT-projecte-1/img/logo-figma.png" alt="logo" class="h-full"></a></li>
-      <li class="capitalize flex items-center gap-3"><i class=" text-slate-500 fa-solid fa-globe"></i>community</li>
+      <li class="border-r border-gray-500 px-3 h-full"><a href="#"class="h-full"><img src="/FE-CAT-projecte-1/img/logo-figma.png" alt="logo" class="h-full"></a></li>
+      <li class=""><a href="#" class="capitalize flex items-center gap-3"><i class="text-slate-500 fa-solid fa-globe"></i><span class="text-sm font-semibold">community</span></a></li>
     </ul>
     <ul class="flex gap-4 mt-4 items-center ">
-      <li><button class=" bg-white rounded-md hover:bg-slate-700 px-6 py-2">Libraries</button></li>
-      <li><button class=" text-black bg-white hover:bg-slate-700 px-6">Design templates</button></li>
-      <li><button>Design tools</button></li>
-      <li>Visual assets</li>
-      <li><button>Whiteboarding</button></li>
-      <li><button>More</button></li>
+      <li><button class="btn-nav">Libraries</button></li>
+      <li><button class="btn-nav">Design templates</button></li>
+      <li><button class="btn-nav">Design tools</button></li>
+      <li><button class="btn-nav">Visual assets</li></button>
+      <li><button class="btn-nav">Whiteboarding</button></li>
+      <li><button class="btn-nav">More</button></li>
     </ul>
-    <ul class="flex gap-4 mx-4 mt-4">
-      <li><button><i class="text-lg text-gray-500 fa-solid fa-magnifying-glass"></i></button></li>
-      <li><button>Log in</button></li>
-      <li><button class="border border-slate-500">Sign up</button></li>
+    <ul class="flex items-center gap-4 mt-4 mr-4">
+      <li><button><i class="text-md text-gray-500 fa-solid fa-magnifying-glass"></i></button></li>
+      <li><button class="btn-nav">Log in</button></li>
+      <li><button class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2">Sign up</button></li>
     </ul>
+    
   </nav>
+  <div class="h-px bg-gray-300 w-[100%] my-5"></div>
   </header>
 <main class="flex h-[82vh] bg-slate-500">
  <section class="w-[40%] bg-blue-200">section 1</section>
