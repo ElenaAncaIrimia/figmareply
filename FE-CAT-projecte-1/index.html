@@ -15,7 +15,7 @@
 
 <body>
   <header class="h-[9vh] bg-white text-black ">
-
+<!-- navigation bar -->
   <nav class="flex justify-between h-10 ">
     <ul class="flex gap-4 mt-4">
       <li class="border-r border-gray-500 px-3 h-full"><a href="#"class="h-full"><img src="/FE-CAT-projecte-1/img/logo-figma.png" alt="logo" class="h-full"></a></li>
@@ -39,7 +39,52 @@
   <div class="h-px bg-gray-300 w-[100%] my-5"></div>
   </header>
 <main class="flex h-[82vh] bg-slate-500">
- <section class="w-[40%] bg-blue-200">section 1</section>
+ <!-- section 1 -->
+<section class="w-[40%] flex justify-center bg-white">
+  <div class="w-[75%] bg-white p-6 flex flex-col items-start justify-center ml-20">
+      <!-- Avatar and Name -->
+      <div class="flex items-center ">
+          <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="/FE-CAT-projecte-1/img/avatar1.jpg" alt="Avatar"class="rounded-full w-full h-full">
+          </div>
+          <div class="ml-4">
+              <p class="text-sm text-gray-900">Sanoj Dilshan</p>
+          </div>
+      </div>
+      <!-- Title -->
+      <div class="mt-4">
+          <p class="text-md font-semibold text-2xl  text-gray-900 capitalize">
+              gaming platform - web design
+          </p>
+      </div>
+      <!-- Design File -->
+      <div class="flex justify-center items-center gap-5">
+      <p class=" text-icons mt-4">Design file</p>
+      <!-- Likes and users -->
+      <div class="flex mt-4 ml-1">
+        <ul class="list-disc flex gap-6 text-gray-500 text-xs">
+         <li><button class="flex items-center ">
+              <i class="text-icons fa-regular fa-heart"></i>
+              <span class="text-icons ml-2">155</span>
+          </button> </li>
+
+         <li> <button class="flex items-center">
+              <i class="text-icons fa-regular fa-user"></i>
+              <span class="text-icons ml-2">5k users</span>
+          </button></li>
+        </ul>
+      </div>
+    </div>
+    <button class="text-white bg-blue-500 hover:bg-blue-600 mt-5 px-4 py-2 rounded-md  mr-4">
+      Open in Figma
+    </button>
+  </div>
+</section>
+
+
+
+
+
  <section class="w-[60%] bg-yellow-200">section 2</section>
 </main>
 <footer class="h-[9vh] bg-green-300"> mi footer

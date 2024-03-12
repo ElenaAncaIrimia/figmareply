@@ -7,5 +7,8 @@
     .btn-nav {
         @apply py-2 px-5 flex items-center bg-white text-black font-semibold text-sm rounded-md  hover:bg-slate-100 focus:outline-none focus:ring focus:bg-slate-100 focus:ring-opacity-75;
     }
+    .text-icons {
+        @apply  text-slate-500 text-sm
+    }
     
 }
