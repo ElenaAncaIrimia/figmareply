@@ -5,10 +5,53 @@
 
 @layer components {
     .btn-nav {
-        @apply py-2 px-5 flex items-center bg-white text-black font-semibold text-sm rounded-md  hover:bg-slate-100 focus:outline-none focus:ring focus:bg-slate-100 focus:ring-opacity-75;
+        @apply py-2 px-5 flex items-center bg-white text-black font-semibold text-sm rounded-md  hover:bg-slate-100   focus:bg-slate-100 focus:border-transparent ;
     }
     .text-icons {
         @apply  text-slate-500 text-sm
     }
+    #navMenu {
+        display: none;
+        margin-top: 2px; /* Ajusta el margen superior para reducir el espacio */
+      }
+      
+      #navBtn:hover + #navMenu,
+      #navBtn:focus + #navMenu,
+      #navMenu:hover {
+        display: block;
+      }
+      .a-Nav {
+        @apply text-slate-600 text-sm font-semibold block px-4 py-2 hover:bg-blue-500 hover:text-white  focus:bg-blue-500 focus:text-white
+      }
+      .menu-Nav {
+        @apply absolute hidden bg-white rounded mt-2 py-2 w-56 text-gray-300 z-10 shadow-md
+      }
+
+  /* Cambio de tamaño suave */
+  .transition-width {
+    transition-property: width;
+  }
+
+  /* Ocultar el input cuando no está enfocado */
+  input {
+    display: none;
+  }
+
+  /* Mostrar el input cuando el botón se enfoca */
+  .flex:focus-within input {
+    display: inline-block;
+    width: 120px; /* Ancho inicial */
+  }
+
+  
+
+  /* Mostrar el placeholder del input */
+  .flex:focus-within input::placeholder {
+    visibility: visible;
+  }
+
+
+  }
+
+  
     
-}

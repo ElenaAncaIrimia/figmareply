@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projecte 1</title>
   <link href="output.css" rel="stylesheet" />
+  <link href="index.css/" rel="stylesheet" />
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -15,40 +16,107 @@
 
 <body>
   <header class="h-[9vh] bg-white text-black ">
-<!-- navigation bar -->
   <nav class="flex justify-between h-10 ">
-    <ul class="flex gap-4 mt-4">
+    <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
+  
       <li class="border-r border-gray-500 px-3 h-full"><a href="#"class="h-full"><img src="/FE-CAT-projecte-1/img/logo-figma.png" alt="logo" class="h-full"></a></li>
       <li class=""><a href="#" class="capitalize flex items-center gap-3"><i class="text-slate-500 fa-solid fa-globe"></i><span class="text-sm font-semibold">community</span></a></li>
     </ul>
-    <ul class="flex gap-4 mt-4 items-center ">
-    
-     <li><button class="btn-nav">Libraries</button>
-    <!-- <ul> 
-      <li><a class="bg-slate-400 text-sm text-black p-10 block min-w-100 hover:bg-slate-700" href="#"> 1 </a></li>
-      <li><a href="#"> 2 </a></li>
-    </ul> -->
-      <li><button class="btn-nav">Design templates</button></li>
-      <li><button class="btn-nav">Design tools</button></li>
-      <li><button class="btn-nav">Visual assets</li></button>
-      <li><button class="btn-nav">Whiteboarding</button></li>
-      <li><button class="btn-nav">More</button></li>
+        <!-- boton desplegable Libraries -->
+    <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
+      <li class="relative">
+          <button id="navBtn" class="btn-nav">
+              Libraries
+          </button>
+          <ul id="navMenu" class="menu-Nav">
+              <li><a href="https://www.figma.com/community/category/ui-kits" class="a-Nav" title="Explore UI kits en Figma">UI kits</a></li>
+              <li><a href="https://www.figma.com/community/category/wireframes" class="a-Nav" title="Explorar wireframes en Figma">Wireframes</a></li>
+          </ul>
+      </li>
+      <!-- boton desplegable Design templates -->
+      <li class="relative">
+        <button id="navBtn" class="btn-nav">
+            Design templates
+        </button>
+        <ul id="navMenu" class="menu-Nav">
+            <li><a href="https://www.figma.com/community/category/desktop-apps-websites" class="a-Nav "title="Explorar aplicaciones de escritorio y sitios web en Figma">Desktop apps & websites</a></li>
+            <li><a href="https://www.figma.com/community/category/mobile-apps" class="a-Nav"title="Explorar aplicaciones móviles en Figma">Mobile apps</a></li>
+            <li><a href="https://www.figma.com/community/category/presentations" class="a-Nav" title="Explorar presentations en Figma">Presentations</a></li>
+            <li><a href="https://www.figma.com/community/category/portfolios-resumes" class="a-Nav whitespace-nowrap" title="Explorar portfolios y currículums en Figma">Portfolios & resumes</a></li>
+        </ul>
+    </li>
+    <!-- boton desplegable Design tools -->
+    <li class="relative">
+      <button id="navBtn" class="btn-nav">
+          Design tools
+      </button>
+      <ul id="navMenu" class="menu-Nav whitespace-nowrap">
+          <li><a href="https://www.figma.com/community/category/accessibility" class="a-Nav"title="Explorar recursos de accesibilidad en Figma">Accessibility</a></li>
+          <li><a href="https://www.figma.com/community/category/design-systems" class="a-Nav"title="Explorar sistemas de diseño en Figma">Design systems</a></li>
+          <li><a href="https://www.figma.com/community/category/editing-effects" class="a-Nav"title="Explorar efectos de edición en Figma">Editing & effects</a></li>
+          <li><a href="https://www.figma.com/community/category/file-organization" class="a-Nav"title="Explorar organización de archivos en Figma">File organization</a></li>
+          <li><a href="https://www.figma.com/community/category/import-export" class="a-Nav"title="Explorar importación y exportación en Figma">Import & export</a></li>
+          <li><a href="https://www.figma.com/community/category/prototyping-animation" class="a-Nav"title="Explorar prototipado y animación en Figma" >Prototyping & animations</a></li>
+      </ul>
+  </li>
+  <!-- boton desplegable Visual assets -->
+  <li class="relative">
+    <button id="navBtn" class="btn-nav">
+       Visual assets
+    </button>
+    <ul id="navMenu" class="menu-Nav">
+        <li><a href="https://www.figma.com/community/category/illustrations" class="a-Nav"title="Explorar ilustraciones en Figma">Illustrations</a></li>
+        <li><a href="https://www.figma.com/community/category/shapes-colors" class="a-Nav"title="Explorar formas y colores en Figma">Shapes & colors</a></li>
     </ul>
+</li>
+<!-- boton desplegable Whiteboarding -->
+<li class="relative">
+  <button id="navBtn" class="btn-nav">
+      Whiteboarding
+  </button>
+  <ul id="navMenu" class="menu-Nav">
+      <li><a href="https://www.figma.com/community/category/brainstorming" class="a-Nav"title="Explorar sesiones de lluvia de ideas en Figma">Brainstorming</a></li>
+      <li><a href="https://www.figma.com/community/category/diagramming" class="a-Nav"title="Explorar diagramación en Figma">Diagramming</a></li>
+      <li><a href="https://www.figma.com/community/category/fun-games" class="a-Nav"title="Explorar juegos y entretenimiento en Figma">Fun & games</a></li>
+      <li><a href="https://www.figma.com/community/category/strategic-planning" class="a-Nav"title="Explorar planificación estratégica en Figma">Strategic planning</a></li>
+      <li><a href="https://www.figma.com/community/category/team-meetings" class="a-Nav"title="Explorar reuniones de equipo en Figma">Team meetings</a></li>
+      
+  </ul>
+</li>
+<!-- boton desplegable More -->
+<li class="relative">
+  <button id="navBtn" class="btn-nav">
+      More
+  </button>
+  <ul id="navMenu" class="menu-Nav">
+      <li><a href="https://www.figma.com/community/category/education" class="a-Nav"title="Explorar recursos educativos en Figma">Education</a></li>
+      <li><a href="https://www.figma.com/community/category/development" class="a-Nav"title="Explorar recursos de desarrollo en Figma">Development</a></li>
+      <li><a href="https://www.figma.com/community/category/icons" class="a-Nav"title="Explorar íconos en Figma">Icons</a></li>
+  </ul>
+</li>
+  </ul>
+    <div class="flex items-center justify-evenly  relative w-[25%]">
     <ul class="flex items-center gap-4 mt-4 mr-4">
-      <li><button><i class="text-md text-gray-500 fa-solid fa-magnifying-glass"></i></button></li>
+      <div class="flex items-center relative">
+        <input type="text" class="hidden ml-7 px-2 py-1 text-sm border border-gray-300 rounded transition-width duration-300 focus:outline-none placeholder-gray-500" placeholder="Search"> 
+        <button class="text-md text-gray-500 focus:outline-none mr-4">
+          <i class="absolute left-2 top-1/2  transform -translate-y-1/2 text-gray-800 text-sm fas fa-search" id="searchIcon"></i>
+        </button>
+      </div>
+      
       <li><button class="btn-nav">Log in</button></li>
       <li><button class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2">Sign up</button></li>
     </ul>
-    
+  </div>
   </nav>
   <div class="h-px bg-gray-300 w-[100%] my-5"></div>
   </header>
 <main class="flex h-[82vh] bg-slate-500">
  <!-- section 1 -->
 <section class="w-[40%] flex justify-center bg-white">
-  <div class="w-[75%] bg-white p-6 flex flex-col items-start justify-center ml-20">
+  <div class="w-[80%] h-auto bg-white flex flex-col items-start justify-center ml-20">
       <!-- Avatar and Name -->
-      <div class="flex items-center ">
+      <div class="flex items-center">
           <div class="w-10 h-10 rounded-full overflow-hidden">
               <img src="/FE-CAT-projecte-1/img/avatar1.jpg" alt="Avatar"class="rounded-full w-full h-full">
           </div>
@@ -86,8 +154,8 @@
   </div>
 </section>
 <!-- section 2 -->
-<section class="w-[60%] bg-white flex items-center">
-  <div class="w-70 h-50 ml-10 mr-40">
+<section class="w-[60%] bg-white flex items-center ">
+  <div class="w-70 h-50 mr-40">
   <img src="/FE-CAT-projecte-1/img/section 2.png" alt="imagen-section2" class="rounded-md object-cover w-full h-full]">
 </div>
  </section>
