@@ -1,170 +1,545 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecte 1</title>
+    <link href="output.css" rel="stylesheet" />
+    <link href="index.css/" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projecte 1</title>
-  <link href="output.css" rel="stylesheet" />
-  <link href="index.css/" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-  <header class="h-[9vh] bg-white text-black ">
-  <nav class="flex justify-between h-10 ">
-    <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
-  
-      <li class="border-r border-gray-500 px-3 h-full"><a href="#"class="h-full"><img src="/FE-CAT-projecte-1/img/logo-figma.png" alt="logo" class="h-full"></a></li>
-      <li class=""><a href="#" class="capitalize flex items-center gap-3"><i class="text-slate-500 fa-solid fa-globe"></i><span class="text-sm font-semibold">community</span></a></li>
-    </ul>
+  <body>
+    <header class="h-[9vh] bg-white text-black">
+      <nav id="navbar" class="flex justify-between h-10">
+        <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
+          <li class="border-r border-gray-500 px-3 h-full">
+            <a href="#" class="h-full"
+              ><img
+                src="/FE-CAT-projecte-1/img/logo-figma.png"
+                alt="logo"
+                class="h-full"
+            /></a>
+          </li>
+          <li class="">
+            <a href="#" class="capitalize flex items-center gap-3"
+              ><i class="text-slate-600 fa-solid fa-globe"></i
+              ><span class="text-sm font-semibold">community</span></a
+            >
+          </li>
+        </ul>
         <!-- boton desplegable Libraries -->
-    <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
-      <li class="relative">
-          <button id="navBtn" class="btn-nav">
-              Libraries
-          </button>
-          <ul id="navMenu" class="menu-Nav">
-              <li><a href="https://www.figma.com/community/category/ui-kits" class="a-Nav" title="Explore UI kits en Figma">UI kits</a></li>
-              <li><a href="https://www.figma.com/community/category/wireframes" class="a-Nav" title="Explorar wireframes en Figma">Wireframes</a></li>
+        <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">Libraries</button>
+            <ul id="navMenu" class="menu-Nav">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/ui-kits"
+                  class="a-Nav"
+                  title="Explore UI kits en Figma"
+                  >UI kits</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/wireframes"
+                  class="a-Nav"
+                  title="Explorar wireframes en Figma"
+                  >Wireframes</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- boton desplegable Design templates -->
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">Design templates</button>
+            <ul id="navMenu" class="menu-Nav">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/desktop-apps-websites"
+                  class="a-Nav"
+                  title="Explorar aplicaciones de escritorio y sitios web en Figma"
+                  >Desktop apps & websites</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/mobile-apps"
+                  class="a-Nav"
+                  title="Explorar aplicaciones móviles en Figma"
+                  >Mobile apps</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/presentations"
+                  class="a-Nav"
+                  title="Explorar presentations en Figma"
+                  >Presentations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/portfolios-resumes"
+                  class="a-Nav whitespace-nowrap"
+                  title="Explorar portfolios y currículums en Figma"
+                  >Portfolios & resumes</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- boton desplegable Design tools -->
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">Design tools</button>
+            <ul id="navMenu" class="menu-Nav whitespace-nowrap">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/accessibility"
+                  class="a-Nav"
+                  title="Explorar recursos de accesibilidad en Figma"
+                  >Accessibility</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/design-systems"
+                  class="a-Nav"
+                  title="Explorar sistemas de diseño en Figma"
+                  >Design systems</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/editing-effects"
+                  class="a-Nav"
+                  title="Explorar efectos de edición en Figma"
+                  >Editing & effects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/file-organization"
+                  class="a-Nav"
+                  title="Explorar organización de archivos en Figma"
+                  >File organization</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/import-export"
+                  class="a-Nav"
+                  title="Explorar importación y exportación en Figma"
+                  >Import & export</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/prototyping-animation"
+                  class="a-Nav"
+                  title="Explorar prototipado y animación en Figma"
+                  >Prototyping & animations</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- boton desplegable Visual assets -->
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">Visual assets</button>
+            <ul id="navMenu" class="menu-Nav">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/illustrations"
+                  class="a-Nav"
+                  title="Explorar ilustraciones en Figma"
+                  >Illustrations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/shapes-colors"
+                  class="a-Nav"
+                  title="Explorar formas y colores en Figma"
+                  >Shapes & colors</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- boton desplegable Whiteboarding -->
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">Whiteboarding</button>
+            <ul id="navMenu" class="menu-Nav">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/brainstorming"
+                  class="a-Nav"
+                  title="Explorar sesiones de lluvia de ideas en Figma"
+                  >Brainstorming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/diagramming"
+                  class="a-Nav"
+                  title="Explorar diagramación en Figma"
+                  >Diagramming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/fun-games"
+                  class="a-Nav"
+                  title="Explorar juegos y entretenimiento en Figma"
+                  >Fun & games</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/strategic-planning"
+                  class="a-Nav"
+                  title="Explorar planificación estratégica en Figma"
+                  >Strategic planning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/team-meetings"
+                  class="a-Nav"
+                  title="Explorar reuniones de equipo en Figma"
+                  >Team meetings</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- boton desplegable More -->
+          <li class="relative">
+            <button id="navBtn" class="btn-nav">More</button>
+            <ul id="navMenu" class="menu-Nav">
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/education"
+                  class="a-Nav"
+                  title="Explorar recursos educativos en Figma"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/development"
+                  class="a-Nav"
+                  title="Explorar recursos de desarrollo en Figma"
+                  >Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com/community/category/icons"
+                  class="a-Nav"
+                  title="Explorar íconos en Figma"
+                  >Icons</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="flex items-center justify-evenly relative w-[25%]">
+          <ul class="flex items-center gap-4 mt-4 mr-4">
+            <div class="flex items-center relative">
+              <input
+                type="text"
+                class="hidden ml-7 px-2 py-1 text-sm border border-gray-300 rounded transition-width duration-300 focus:outline-none placeholder-gray-500"
+                placeholder="Search"
+              />
+              <button class="text-md text-gray-500 focus:outline-none mr-4">
+                <i
+                  class="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-800 text-sm fas fa-search"
+                  id="searchIcon"
+                ></i>
+              </button>
+            </div>
+
+            <li><button class="btn-nav">Log in</button></li>
+            <li>
+              <button
+                class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2"
+              >
+                Sign up
+              </button>
+            </li>
           </ul>
-      </li>
-      <!-- boton desplegable Design templates -->
-      <li class="relative">
-        <button id="navBtn" class="btn-nav">
-            Design templates
-        </button>
-        <ul id="navMenu" class="menu-Nav">
-            <li><a href="https://www.figma.com/community/category/desktop-apps-websites" class="a-Nav "title="Explorar aplicaciones de escritorio y sitios web en Figma">Desktop apps & websites</a></li>
-            <li><a href="https://www.figma.com/community/category/mobile-apps" class="a-Nav"title="Explorar aplicaciones móviles en Figma">Mobile apps</a></li>
-            <li><a href="https://www.figma.com/community/category/presentations" class="a-Nav" title="Explorar presentations en Figma">Presentations</a></li>
-            <li><a href="https://www.figma.com/community/category/portfolios-resumes" class="a-Nav whitespace-nowrap" title="Explorar portfolios y currículums en Figma">Portfolios & resumes</a></li>
-        </ul>
-    </li>
-    <!-- boton desplegable Design tools -->
-    <li class="relative">
-      <button id="navBtn" class="btn-nav">
-          Design tools
-      </button>
-      <ul id="navMenu" class="menu-Nav whitespace-nowrap">
-          <li><a href="https://www.figma.com/community/category/accessibility" class="a-Nav"title="Explorar recursos de accesibilidad en Figma">Accessibility</a></li>
-          <li><a href="https://www.figma.com/community/category/design-systems" class="a-Nav"title="Explorar sistemas de diseño en Figma">Design systems</a></li>
-          <li><a href="https://www.figma.com/community/category/editing-effects" class="a-Nav"title="Explorar efectos de edición en Figma">Editing & effects</a></li>
-          <li><a href="https://www.figma.com/community/category/file-organization" class="a-Nav"title="Explorar organización de archivos en Figma">File organization</a></li>
-          <li><a href="https://www.figma.com/community/category/import-export" class="a-Nav"title="Explorar importación y exportación en Figma">Import & export</a></li>
-          <li><a href="https://www.figma.com/community/category/prototyping-animation" class="a-Nav"title="Explorar prototipado y animación en Figma" >Prototyping & animations</a></li>
-      </ul>
-  </li>
-  <!-- boton desplegable Visual assets -->
-  <li class="relative">
-    <button id="navBtn" class="btn-nav">
-       Visual assets
-    </button>
-    <ul id="navMenu" class="menu-Nav">
-        <li><a href="https://www.figma.com/community/category/illustrations" class="a-Nav"title="Explorar ilustraciones en Figma">Illustrations</a></li>
-        <li><a href="https://www.figma.com/community/category/shapes-colors" class="a-Nav"title="Explorar formas y colores en Figma">Shapes & colors</a></li>
-    </ul>
-</li>
-<!-- boton desplegable Whiteboarding -->
-<li class="relative">
-  <button id="navBtn" class="btn-nav">
-      Whiteboarding
-  </button>
-  <ul id="navMenu" class="menu-Nav">
-      <li><a href="https://www.figma.com/community/category/brainstorming" class="a-Nav"title="Explorar sesiones de lluvia de ideas en Figma">Brainstorming</a></li>
-      <li><a href="https://www.figma.com/community/category/diagramming" class="a-Nav"title="Explorar diagramación en Figma">Diagramming</a></li>
-      <li><a href="https://www.figma.com/community/category/fun-games" class="a-Nav"title="Explorar juegos y entretenimiento en Figma">Fun & games</a></li>
-      <li><a href="https://www.figma.com/community/category/strategic-planning" class="a-Nav"title="Explorar planificación estratégica en Figma">Strategic planning</a></li>
-      <li><a href="https://www.figma.com/community/category/team-meetings" class="a-Nav"title="Explorar reuniones de equipo en Figma">Team meetings</a></li>
-      
-  </ul>
-</li>
-<!-- boton desplegable More -->
-<li class="relative">
-  <button id="navBtn" class="btn-nav">
-      More
-  </button>
-  <ul id="navMenu" class="menu-Nav">
-      <li><a href="https://www.figma.com/community/category/education" class="a-Nav"title="Explorar recursos educativos en Figma">Education</a></li>
-      <li><a href="https://www.figma.com/community/category/development" class="a-Nav"title="Explorar recursos de desarrollo en Figma">Development</a></li>
-      <li><a href="https://www.figma.com/community/category/icons" class="a-Nav"title="Explorar íconos en Figma">Icons</a></li>
-  </ul>
-</li>
-  </ul>
-    <div class="flex items-center justify-evenly  relative w-[25%]">
-    <ul class="flex items-center gap-4 mt-4 mr-4">
-      <div class="flex items-center relative">
-        <input type="text" class="hidden ml-7 px-2 py-1 text-sm border border-gray-300 rounded transition-width duration-300 focus:outline-none placeholder-gray-500" placeholder="Search"> 
-        <button class="text-md text-gray-500 focus:outline-none mr-4">
-          <i class="absolute left-2 top-1/2  transform -translate-y-1/2 text-gray-800 text-sm fas fa-search" id="searchIcon"></i>
-        </button>
+        </div>
+      </nav>
+      <div class="h-px bg-gray-300 w-[100%] my-5"></div>
+    </header>
+    <main class="flex flex-col bg-white">
+      <div class="flex h-[75vh] bg-white-500">
+        <!-- section 1 -->
+        <section class="w-[40%] flex bg-white">
+          <div
+            class="w-[80%] h-auto bg-white flex flex-col items-start mt-40 ml-24"
+          >
+            <!-- Avatar and Name -->
+            <div class="flex items-center">
+              <div class="w-10 h-10 rounded-full overflow-hidden">
+                <img
+                  src="/FE-CAT-projecte-1/img/foto-avatar.avif"
+                  alt="Avatar"
+                  class="rounded-full w-full h-full"
+                />
+              </div>
+              <div class="ml-4">
+                <p class="text-sm text-gray-900">Sanoj Dilshan</p>
+              </div>
+            </div>
+            <!-- Title -->
+            <div class="mt-4">
+              <p
+                class="text-md font-semibold text-2xl text-gray-900 capitalize"
+              >
+                gaming platform - web design
+              </p>
+            </div>
+            <!-- Design File -->
+            <div class="flex justify-center items-center gap-5">
+              <p class="text-icons mt-4">Design file</p>
+              <!-- Likes and users -->
+              <div class="flex mt-4 ml-1">
+                <ul class="list-disc flex gap-6 text-gray-500 text-xs">
+                  <li>
+                    <button class="flex items-center">
+                      <i class="text-icons fa-regular fa-heart"></i>
+                      <span class="text-icons ml-2">155</span>
+                    </button>
+                  </li>
+
+                  <li>
+                    <button class="flex items-center">
+                      <i class="text-icons fa-regular fa-user"></i>
+                      <span class="text-icons ml-2">5k users</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a
+              href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design"
+              target="_blank"
+              title="pagina del proyecto original"
+            >
+              <button
+                class="text-white bg-blue-500 hover:bg-blue-600 mt-5 px-4 py-2 rounded-md mr-4"
+              >
+                Open in Figma
+              </button>
+            </a>
+          </div>
+        </section>
+        <!-- section 2 -->
+        <section class="w-[60%] bg-white flex mt-10">
+          <div class="w-70 h-50 mr-40">
+            <img
+              src="/FE-CAT-projecte-1/img/section 2.png"
+              alt="imagen-section2"
+              class="rounded-md object-cover w-full h-full]"
+            />
+          </div>
+        </section>
       </div>
-      
-      <li><button class="btn-nav">Log in</button></li>
-      <li><button class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2">Sign up</button></li>
-    </ul>
-  </div>
-  </nav>
-  <div class="h-px bg-gray-300 w-[100%] my-5"></div>
-  </header>
-<main class="flex h-[82vh] bg-slate-500">
- <!-- section 1 -->
-<section class="w-[40%] flex justify-center bg-white">
-  <div class="w-[80%] h-auto bg-white flex flex-col items-start justify-center ml-20">
-      <!-- Avatar and Name -->
+      <div class="flex items-start h-[6vh] bg-white">
+        <ul class="ml-24 flex gap-5">
+          <li class="text-black font-semibold underline">
+            <a href="#navbar">About</a>
+          </li>
+          <li class="text-slate-500"> <a href="#comments">
+            Comments </a><span class="text-slate-400">11</span>
+          </li>
+        </ul>
+      </div>
+      <div class="h-[1px] w-full bg-gray-300 shadow-xl"></div>
+      <div class="text-sm ml-24 mt-4">
+        Gaming Platform Web Design is a simple, clean, professional Landing Page
+        UI Kit for business, agency, company, apps, or digital product.
+      </div>
+      <div id="comments">
+        <ul class="flex items-center justify-center w-[90%]">
+          <li class="flex mt-10 w-[87%]">
+            <form
+              class="w-[72%] h-10 flex items-center gap-5 border border-slate-400 rounded-md px-4 py-2"
+            >
+              <!-- Logo -->
+              <img
+                src="/FE-CAT-projecte-1/img/logoA.png"
+                alt="Logo comentarios"
+                class="w-9 h-9 mr-4 rounded-full"
+              />
+
+              <input
+                class="focus:outline-none"
+                placeholder="Add a comment"
+              /><span class="text-slate-500 mr-96 whitespace-nowrap"
+                >Add a comment</span
+              >
+              <button
+                class="bg-slate-400 text-sm ml-36 text-white px-7 py-1 rounded-md"
+              >
+                Post
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <p class="text-xs font-semibold mt-4 ml-24">11 comments</p>
+
       <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full overflow-hidden">
-              <img src="/FE-CAT-projecte-1/img/avatar1.jpg" alt="Avatar"class="rounded-full w-full h-full">
-          </div>
-          <div class="ml-4">
-              <p class="text-sm text-gray-900">Sanoj Dilshan</p>
-          </div>
-      </div>
-      <!-- Title -->
-      <div class="mt-4">
-          <p class="text-md font-semibold text-2xl  text-gray-900 capitalize">
-              gaming platform - web design
-          </p>
-      </div>
-      <!-- Design File -->
-      <div class="flex justify-center items-center gap-5">
-      <p class=" text-icons mt-4">Design file</p>
-      <!-- Likes and users -->
-      <div class="flex mt-4 ml-1">
-        <ul class="list-disc flex gap-6 text-gray-500 text-xs">
-         <li><button class="flex items-center ">
-              <i class="text-icons fa-regular fa-heart"></i>
-              <span class="text-icons ml-2">155</span>
-          </button> </li>
-
-         <li> <button class="flex items-center">
-              <i class="text-icons fa-regular fa-user"></i>
-              <span class="text-icons ml-2">5k users</span>
-          </button></li>
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rajma Nazer</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@rajmanazer</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>6 months ago</li>
         </ul>
       </div>
-    </div>
-    <button class="text-white bg-blue-500 hover:bg-blue-600 mt-5 px-4 py-2 rounded-md  mr-4">
-      Open in Figma
-    </button>
-  </div>
-</section>
-<!-- section 2 -->
-<section class="w-[60%] bg-white flex items-center ">
-  <div class="w-70 h-50 mr-40">
-  <img src="/FE-CAT-projecte-1/img/section 2.png" alt="imagen-section2" class="rounded-md object-cover w-full h-full]">
-</div>
- </section>
+      <p class="ml-36 text-sm">great job</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
 
-</main>
-<footer class="h-[9vh] bg-green-300"> mi footer
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">darkhan</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@darkhan2</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">hello, everything turned out cool for you and do you have a photo of the gamepad on the background in the homepage</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Ayoub Sbai
+        </p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@ayoubsbai</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">do you have a mobile version please. I would be grateful!</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Andrej Horníček</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@andrejhornicek</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">How do I open The Image to Edit it to my needs ? Thank You ! </p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">nobodydev</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@nobodydev</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">thangs a lot sir</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
+        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">Thank you <a href="https://www.figma.com/@nobodydev" target="_blank" class="a-comments">@nobodydev</a>
+         </p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Adnane Riyadi</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@adnaneriyad</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">Loved it, thank you for this design</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
+        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>1 year ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">Thank you<a href="https://www.figma.com/@adnaneriyadi" target="_blank" class="a-comments">@adnaneriyadi</a>  </p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rauliqbal</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@Rauliqbal</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>2 years ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">may i have permission to make it a landing page website?</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
+        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>2 years ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">of course <a href="https://www.figma.com/@rauliqbal " target="_blank "class="a-comments">@Rauliqbal</a> 🤗 </p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <div class="flex items-center">
+        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        </div>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Robert</p>
+        <p class="mt-4 ml-3 text-xs text-gray-400">@robertmenezes</p>
+        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+          <li>2 years ago</li>
+        </ul>
+      </div>
+      <p class="ml-36 text-sm">Nice work 👏</p>
+      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
 
-</footer>
-</body> 
+      
+    </main>
 
+    <!-- <footer class="h-[9vh] bg-green-300">mi footer</footer> -->
+  </body>
 </html>
-
