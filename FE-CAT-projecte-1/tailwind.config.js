@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html", "./input.css"],
+  content: ["./index.html", "./input.css", "./formulario.html"],
   theme: {
     extend: {
       boxShadow: {
