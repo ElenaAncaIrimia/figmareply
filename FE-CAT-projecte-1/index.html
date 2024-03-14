@@ -18,11 +18,13 @@
   </head>
 
   <body>
-    <header class="h-[9vh] bg-white text-black">
+    <header class="h-[9vh] bg-white text-black fixed w-full">
       <nav id="navbar" class="flex justify-between h-10">
         <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
           <li class="border-r border-gray-500 px-3 h-full">
-            <a href="#" class="h-full"
+            <a
+              href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design"
+              target="_blank"
               ><img
                 src="/FE-CAT-projecte-1/img/logo-figma.png"
                 alt="logo"
@@ -30,16 +32,27 @@
             /></a>
           </li>
           <li class="">
-            <a href="#" class="capitalize flex items-center gap-3"
+            <a
+              href="https://www.figma.com/community"
+              title="Community Figma"
+              target="_blank"
+              class="capitalize flex items-center gap-3"
               ><i class="text-slate-600 fa-solid fa-globe"></i
-              ><span class="text-sm font-semibold">community</span></a
+              ><span class="text-sm font-semibold"> community </span></a
             >
           </li>
         </ul>
         <!-- boton desplegable Libraries -->
         <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
           <li class="relative">
-            <button id="navBtn" class="btn-nav">Libraries</button>
+            <button id="navBtn" class="btn-nav">
+              <a
+                href="https://www.figma.com/community/category/libraries"
+                target="_blank"
+                title="Libraries Figma"
+                >Libraries</a
+              >
+            </button>
             <ul id="navMenu" class="menu-Nav">
               <li>
                 <a
@@ -61,7 +74,14 @@
           </li>
           <!-- boton desplegable Design templates -->
           <li class="relative">
-            <button id="navBtn" class="btn-nav">Design templates</button>
+            <button id="navBtn" class="btn-nav">
+              <a
+                href="https://www.figma.com/community/category/design-templates"
+                target="_blank"
+                title="Design templates Figma"
+                >Design templates</a
+              >
+            </button>
             <ul id="navMenu" class="menu-Nav">
               <li>
                 <a
@@ -99,7 +119,14 @@
           </li>
           <!-- boton desplegable Design tools -->
           <li class="relative">
-            <button id="navBtn" class="btn-nav">Design tools</button>
+            <button id="navBtn" class="btn-nav">
+              <a
+                href="https://www.figma.com/community/category/design-tools"
+                target="_blank"
+                title="Design tools Figma"
+                >Design tools</a
+              >
+            </button>
             <ul id="navMenu" class="menu-Nav whitespace-nowrap">
               <li>
                 <a
@@ -153,7 +180,14 @@
           </li>
           <!-- boton desplegable Visual assets -->
           <li class="relative">
-            <button id="navBtn" class="btn-nav">Visual assets</button>
+            <button id="navBtn" class="btn-nav">
+              <a
+                href="https://www.figma.com/community/category/visual-assets"
+                target="_blank"
+                title="Visual assets Figma"
+                >Visual assets</a
+              >
+            </button>
             <ul id="navMenu" class="menu-Nav">
               <li>
                 <a
@@ -175,7 +209,14 @@
           </li>
           <!-- boton desplegable Whiteboarding -->
           <li class="relative">
-            <button id="navBtn" class="btn-nav">Whiteboarding</button>
+            <button id="navBtn" class="btn-nav">
+              <a
+                href="https://www.figma.com/community/category/whiteboarding"
+                target="_blank"
+                title="Whiteboarding Figma"
+                >Whiteboarding</a
+              >
+            </button>
             <ul id="navMenu" class="menu-Nav">
               <li>
                 <a
@@ -266,7 +307,12 @@
               </button>
             </div>
 
-            <li><button class="btn-nav">Log in</button></li>
+            <li>
+              <a href="formulario.html" target="_blank" class="btn-nav"
+                >Log in</a
+              >
+            </li>
+
             <li>
               <button
                 class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2"
@@ -280,11 +326,11 @@
       <div class="h-px bg-gray-300 w-[100%] my-5"></div>
     </header>
     <main class="flex flex-col bg-white">
-      <div class="flex h-[75vh] bg-white-500">
+      <div class="flex h-[75vh] bg-white-500 mt-16">
         <!-- section 1 -->
         <section class="w-[40%] flex bg-white">
           <div
-            class="w-[80%] h-auto bg-white flex flex-col items-start mt-40 ml-24"
+            class="w-[80%] h-auto bg-white flex flex-col items-start mt-40 ml-36"
           >
             <!-- Avatar and Name -->
             <div class="flex items-center">
@@ -354,22 +400,23 @@
         </section>
       </div>
       <div class="flex items-start h-[6vh] bg-white">
-        <ul class="ml-24 flex gap-5">
+        <ul class="ml-36 flex gap-5">
           <li class="text-black font-semibold underline">
             <a href="#navbar">About</a>
           </li>
-          <li class="text-slate-500"> <a href="#comments">
-            Comments </a><span class="text-slate-400">11</span>
+          <li class="text-slate-500">
+            <a href="#comments"> Comments </a
+            ><span class="text-slate-400">11</span>
           </li>
         </ul>
       </div>
       <div class="h-[1px] w-full bg-gray-300 shadow-xl"></div>
-      <div class="text-sm ml-24 mt-4">
-        Gaming Platform Web Design is a simple, clean, professional Landing Page
-        UI Kit for business, agency, company, apps, or digital product.
+      <div class="text-sm ml-36 mt-4">
+        Gaming Platform Web Design is a simple, professional Landing Page UI Kit
+        for business, agency, company, apps, or digital product.
       </div>
       <div id="comments">
-        <ul class="flex items-center justify-center w-[90%]">
+        <ul class="flex items-center justify-center ml-14 w-[84%]">
           <li class="flex mt-10 w-[87%]">
             <form
               class="w-[72%] h-10 flex items-center gap-5 border border-slate-400 rounded-md px-4 py-2"
@@ -388,7 +435,7 @@
                 >Add a comment</span
               >
               <button
-                class="bg-slate-400 text-sm ml-36 text-white px-7 py-1 rounded-md"
+                class="bg-gray-300 text-sm ml-24 text-white px-7 py-1 rounded-md"
               >
                 Post
               </button>
@@ -396,11 +443,11 @@
           </li>
         </ul>
       </div>
-      <p class="text-xs font-semibold mt-4 ml-24">11 comments</p>
+      <p class="text-xs font-semibold mt-4 ml-36">11 comments</p>
 
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/1.avif" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rajma Nazer</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@rajmanazer</p>
@@ -408,12 +455,12 @@
           <li>6 months ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">great job</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">great job</p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
 
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/a.jpeg" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">darkhan</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@darkhan2</p>
@@ -421,36 +468,44 @@
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">hello, everything turned out cool for you and do you have a photo of the gamepad on the background in the homepage</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        hello, everything turned out cool for you and do you have a photo of the
+        gamepad on the background in the homepage
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/3.jpg" alt="Avatar" />
         </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Ayoub Sbai
-        </p>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Ayoub Sbai</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@ayoubsbai</p>
         <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">do you have a mobile version please. I would be grateful!</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        do you have a mobile version please. I would be grateful!
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/4.jpg" alt="Avatar" />
         </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Andrej Horníček</p>
+        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">
+          Andrej Horníček
+        </p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@andrejhornicek</p>
         <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">How do I open The Image to Edit it to my needs ? Thank You ! </p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        How do I open The Image to Edit it to my needs ? Thank You !
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/5.jpg" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">nobodydev</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@nobodydev</p>
@@ -458,25 +513,36 @@
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">thangs a lot sir</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">thangs a lot sir</p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <button
+          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
+        >
+          creator
+        </button>
         <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">Thank you <a href="https://www.figma.com/@nobodydev" target="_blank" class="a-comments">@nobodydev</a>
-         </p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        Thank you
+        <a
+          href="https://www.figma.com/@nobodydev"
+          target="_blank"
+          class="a-comments"
+          >@nobodydev</a
+        >
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/emily.avif" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Adnane Riyadi</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@adnaneriyad</p>
@@ -484,24 +550,35 @@
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">Loved it, thank you for this design</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">Loved it, thank you for this design</p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <button
+          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
+        >
+          creator
+        </button>
         <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
           <li>1 year ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">Thank you<a href="https://www.figma.com/@adnaneriyadi" target="_blank" class="a-comments">@adnaneriyadi</a>  </p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        Thank you<a
+          href="https://www.figma.com/@adnaneriyadi"
+          target="_blank"
+          class="a-comments"
+          >@adnaneriyadi</a
+        >
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/b.jpeg" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rauliqbal</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@Rauliqbal</p>
@@ -509,24 +586,39 @@
           <li>2 years ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">may i have permission to make it a landing page website?</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        may i have permission to make it a landing page website?
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize">creator</button>
+        <button
+          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
+        >
+          creator
+        </button>
         <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
           <li>2 years ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">of course <a href="https://www.figma.com/@rauliqbal " target="_blank "class="a-comments">@Rauliqbal</a> 🤗 </p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
+      <p class="ml-48 text-sm">
+        of course
+        <a
+          href="https://www.figma.com/@rauliqbal "
+          target="_blank "
+          class="a-comments"
+          >@Rauliqbal</a
+        >
+        🤗
+      </p>
+      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
       <div class="flex items-center">
-        <div class="ml-24 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+          <img src="/FE-CAT-projecte-1/img/c.webp" alt="Avatar" />
         </div>
         <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Robert</p>
         <p class="mt-4 ml-3 text-xs text-gray-400">@robertmenezes</p>
@@ -534,12 +626,205 @@
           <li>2 years ago</li>
         </ul>
       </div>
-      <p class="ml-36 text-sm">Nice work 👏</p>
-      <div class="h-px bg-gray-300 w-[54%] ml-36 my-3 mx-32"></div> 
-
-      
+      <p class="ml-48 text-sm">Nice work 👏</p>
+      <div class="h-px bg-gray-500 w-[49%] ml-48 my-3 mx-32"></div>
+      <div class="h-px bg-gray-500 w-[72vw] mt-20 ml-36 my-3 mx-32"></div>
     </main>
 
-    <!-- <footer class="h-[9vh] bg-green-300">mi footer</footer> -->
+    <footer class="h-[50vh] bg-white-300">
+      <div class="text-sm flex flex-wrap mt-8">
+        <ul class="space-y-4 ml-44">
+          <li class="font-semibold">Popular searches</li>
+          <li>
+            <a
+              href="https://www.figma.com/community/search?resource_type=mixed&sort_by=all_time&query=resume&editor_type=all&price=all&creators=all"
+              target="_blank"
+              title="Resume"
+              class="hover:underline"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.figma.com/community/search?resource_type=mixed&sort_by=all_time&query=design+system&editor_type=all&price=all&creators=all "
+              target="_blank"
+              title="Design system"
+              class="hover:underline"
+              >Design system</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.figma.com/community/search?resource_type=mixed&sort_by=all_time&query=presentation&editor_type=all&price=all&creators=all"
+              target="_blank"
+              title="Presentations"
+              class="hover:underline"
+              >Presentations</a
+            >
+          </li> 
+          <li>
+            <a
+          href="https://www.figma.com/community/search?resource_type=mixed&sort_by=all_time&query=portfolio&editor_type=all&price=all&creators=all"
+          target="_blank"
+          title="Portfolio"
+          class="hover:underline"
+          >Portfolio</a>
+          </li>
+        <li> 
+          <a
+        href="https://www.figma.com/community/search?resource_type=mixed&sort_by=all_time&query=standup&editor_type=all&price=all&creators=all"
+        target="_blank"
+        title="Standup template"
+        class="hover:underline"
+        >Standup template</a>
+        </li>
+        </ul>
+
+        <ul class="space-y-4 ml-44">
+          <li class="font-semibold">Most used</li>
+          <li>
+            <a
+        href="https://www.figma.com/community/file/878585965681562011/material-design-icons"
+        target="_blank"
+        title="Material Design Icons"
+        class="hover:underline"
+        >
+            Material Design Icons</a>
+          </li>
+
+          <li>
+            <a
+        href="https://www.figma.com/community/file/1248375255495415511/apple-design-resources-ios-17-and-ipados-17"
+        target="_blank"
+        title="Apple Design Resources"
+        class="hover:underline"
+        >Apple Design Resources</a>
+      </li>
+          <li>
+            <a
+        href="https://www.figma.com/community/file/784448220678228461/figma-auto-layout-playground"
+        target="_blank"
+        title="Figma auto layout playground"
+        class="hover:underline"
+        >Figma auto layout playground</a>
+      </li>
+          <li>
+            <a
+            href="https://www.figma.com/community/plugin/857346721138427857/anima-figma-to-code-react-html-vue-css-tailwind"
+            target="_blank"
+            title="Anima - Figma to React, HTML"
+            class="hover:underline"
+            >Anima - Figma to React, HTML</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/file/831698976089873405/ant-design-open-source"
+            target="_blank"
+            title="Ant Design Open Source"
+            class="hover:underline"
+            >Ant Design Open Source</a></li>
+        </ul>
+
+        <ul class="space-y-4 ml-44">
+          <li class="font-semibold">Trending resources</li>
+          <li>
+            <a
+            href="https://www.figma.com/community/widget/1274481464484630971/jambot"
+            target="_blank"
+            title="JamBot"
+            class="hover:underline"
+            >JamBot</a>
+          </li>
+          <li>
+            <a
+            href="https://www.figma.com/community/plugin/733902567457592893/autoflow"
+            target="_blank"
+            title="Autoflow"
+            class="hover:underline"
+            >
+            Autoflow</a>
+          </li>
+          <li>
+            <a
+            href="https://www.figma.com/community/plugin/958202093377483021/mesh-gradient"
+            target="_blank"
+            title="Mesh gradient"
+            class="hover:underline"
+            >
+            Mesh gradient</a>
+          </li>
+          <li>
+            <a
+            href="https://www.figma.com/community/plugin/1159123024924461424/html-to-design"
+            target="_blank"
+            title="html.to.design"
+            class="hover:underline"
+            >html.to.design</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/widget/1294022067228783307/figlabels"
+            target="_blank"
+            title="Status Stamp"
+            class="hover:underline"
+            >
+            Status Stamp</li>
+        </ul>
+
+        <ul class="space-y-4 ml-44">
+          <li class="font-semibold">Top categories</li>
+          <li>
+            <a
+            href="https://www.figma.com/community/category/inspiration"
+            target="_blank"
+            title="Inspiration"
+            class="hover:underline"
+            >Inspiration</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/category/design-systems"
+            target="_blank"
+            title="Design systems"
+            class="hover:underline"
+            >
+            Design systems</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/category/visual-assets"
+            target="_blank"
+            title=" Visual assets"
+            class="hover:underline"
+            >
+            Visual assets</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/category/development"
+            target="_blank"
+            title=" Development"
+            class="hover:underline"
+            >
+            Development</a></li>
+          <li>
+            <a
+            href="https://www.figma.com/community/category/jam-sessions"
+            target="_blank"
+            title=" Team syncs"
+            class="hover:underline"
+            >
+            Team syncs</a></li>
+        </ul>
+      </div>
+      <div class="w-[7vw] h-[7vh] mt-5 ml-40">
+        <img src="/FE-CAT-projecte-1/img/logo-figma2.png" alt="Logo Figma_black" /> 
+      </div>
+      <div class="container flex gap-5 text-sm ml-44 mt-2">
+        <p class="mt-3">© 2023 Figma, Inc.</p>
+        <ul class="flex justify-center mt-3">
+            <li class="list-disc ml-2"><a href="https://www.figma.com/sitemaps/figma-community-index.xml" target="_blank" title="Site map" class="mr-4 hover:underline">Site map</a></li>
+            <li class="list-disc ml-2" ><a href="https://help.figma.com/hc/en-us/articles/360038510573-Figma-Community-Guidelines" 
+              target="_blank"title="Community guidelines"
+              class="mr-4 hover:underline">Community guidelines</a></li>
+            <li class="list-disc ml-2"><a href="https://www.figma.com/legal/community-terms/" target="_blank" title="Terms of service" class="mr-4 hover:underline">Terms of service</a></li>
+        </ul>
+    </div>
+    </footer>
   </body>
 </html>
