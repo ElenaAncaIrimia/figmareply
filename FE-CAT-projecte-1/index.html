@@ -18,20 +18,22 @@
   </head>
 
   <body>
-    <header class="h-[10vh] bg-white text-black fixed w-full">
+    <header class="h-[10vh] bg-white text-black fixed w-full md:flex">
       <nav id="navbar" class="flex justify-between h-10">
-        <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
-          <li class="border-r border-gray-500 px-3 h-full">
-            <a
+        <ul class="flex gap-4 mt-4 mr-4 w-[20%] h-10">
+          
+
+           <li> <a
               href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design"
               target="_blank"
               ><img
                 src="/FE-CAT-projecte-1/img/logo-figma.png"
                 alt="logo"
-                class="h-full"
+                class="w-10 h-"
             /></a>
           </li>
-          <li class="">
+          <li class="border-r border-gray-500 px-3 h-full"></li>
+          <li>
             <a
               href="https://www.figma.com/community"
               title="Community Figma"
@@ -41,11 +43,12 @@
               ><span class="text-sm font-semibold"> community </span></a
             >
           </li>
+        
         </ul>
         
         <!-- boton desplegable Libraries -->
         <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">
               <a
                 href="https://www.figma.com/community/category/libraries"
@@ -74,7 +77,7 @@
             </ul>
           </li>
           <!-- boton desplegable Design templates -->
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">
               <a
                 href="https://www.figma.com/community/category/design-templates"
@@ -119,7 +122,7 @@
             </ul>
           </li>
           <!-- boton desplegable Design tools -->
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">
               <a
                 href="https://www.figma.com/community/category/design-tools"
@@ -180,7 +183,7 @@
             </ul>
           </li>
           <!-- boton desplegable Visual assets -->
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">
               <a
                 href="https://www.figma.com/community/category/visual-assets"
@@ -209,7 +212,7 @@
             </ul>
           </li>
           <!-- boton desplegable Whiteboarding -->
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">
               <a
                 href="https://www.figma.com/community/category/whiteboarding"
@@ -262,7 +265,7 @@
             </ul>
           </li>
           <!-- boton desplegable More -->
-          <li class="relative">
+          <li class="relative md:hidden">
             <button id="navBtn" class="btn-nav">More</button>
             <ul id="navMenu" class="menu-Nav">
               <li>
@@ -310,7 +313,7 @@
               </button>
             </div>
 <!-- log in  -->
-            <li>
+            <li class="md:hidden">
               <a href="formulario.html" target="_blank" class="btn-nav"
                 >Log in</a
               >
@@ -394,12 +397,12 @@
           <!-- </div> -->
         </section>
         <!-- section 2 -->
-        <section class="w-[60%] bg-white flex mt-10">
+        <section class="w-[60%] bg-white flex mt-10 ">
           <div class="w-70 h-50 mr-40">
             <img
               src="/FE-CAT-projecte-1/img/section 2.png"
               alt="imagen-section2"
-              class="rounded-md object-cover w-full h-full]"
+              class="rounded-md object-cover w-full h-full"
             />
           </div>
         </section>
