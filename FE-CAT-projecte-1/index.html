@@ -18,22 +18,21 @@
   </head>
 
   <body>
-    <header class="h-[9%]   bg-white text-black fixed w-full">
-      <nav id="navbar" class="flex justify-between h-10 w-full ">
-        <div class="w-[20%] sm:w-[50%]">
-        <ul class="flex gap-4 items-center mt-2">
-         <li class="">
+    <header class="h-[9vh] bg-blue-900 text-black fixed w-full">
+      <nav id="navbar" class="flex justify-between h-10">
+        <!-- navBar izquierda -->
+        <ul class="flex gap-4 mt-4 mr-4 w-[20%]">
+          <li class="border-r border-gray-500 px-3 h-full">
             <a
               href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design"
               target="_blank"
               ><img
                 src="/FE-CAT-projecte-1/img/logo-figma.png"
                 alt="logo"
-                class="w-8 sm:w-10 mt-1  "
+                class="h-full"
             /></a>
           </li>
-         
-          <li>
+          <li class="">
             <a
               href="https://www.figma.com/community"
               title="Community Figma"
@@ -44,10 +43,8 @@
             >
           </li>
         </ul>
-      </div>
         <!-- boton desplegable Libraries -->
-        <div class="hidden sm:block" >
-        <ul class="flex gap-4 mt-2  mr-48 relative whitespace-nowrap">
+        <ul class="flex gap-4 mt-4 items-center relative w-[55%]">
           <li class="relative">
             <button id="navBtn" class="btn-nav">
               <a
@@ -295,31 +292,30 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="w-[20%] hidden sm:block ">
-        <div class="flex items-center justify-evenly whitespace-nowrap mr-5 relative ">
-          <ul class="flex items-center gap-4 mt-2 ">
-            <div class="flex items-center  relative">
+        <!-- navBar derecha -->
+        <div class="flex items-center justify-evenly relative w-[25%]">
+          <ul class="flex items-center gap-4 mt-4 mr-4">
+            <div class="flex items-center relative">
               <input
                 type="text"
                 class="hidden ml-7 px-2 py-1 text-sm border border-gray-300 rounded transition-width duration-300 focus:outline-none placeholder-gray-500"
                 placeholder="Search"
               />
-              <button class="text-md text-gray-500 focus:outline-none mr-4 ">
+              <button class="text-md text-gray-500 focus:outline-none mr-4">
                 <i
-                  class="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-800 text-sm  fas fa-search "
+                  class="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-800 text-sm fas fa-search"
                   id="searchIcon"
                 ></i>
               </button>
             </div>
 
-            <li class="hidden sm:block">
+            <li>
               <a href="formulario.html" target="_blank" class="btn-nav"
                 >Log in</a
               >
             </li>
 
-            <li class="hidden sm:block">
+            <li>
               <button
                 class="font-semibold text-sm border border-slate-500 rounded-md px-4 py-2"
               >
@@ -329,17 +325,18 @@
           </ul>
         </div>
       </nav>
-      <div class="h-px bg-gray-300 w-[100%] my-5"></div>
+      <!-- barra de separacion -->
+      <div class="h-px bg-gray-300 w-full my-5"></div>
     </header>
-    <main class="flex flex-col h-[82%]  bg-slate-400">
-      <div class="flex   bg-white mt-16">
+    <main class="flex flex-col bg-red-800 w-full" >
+      <div class="flex h-[75vh] bg-white ">
         <!-- section 1 -->
-        <div class="w-[40%] bg-slate-100 flex">
-        
-          <div class="w-[80%] sm:w-full h-auto bg-slate-200 flex flex-col  items-start mt-40 ml-36 sm:ml-10 md:ml-10 lg:ml-40">
-          
+        <section class="w-[40%] flex bg-slate-100">
+          <div
+            class="w-full h-auto bg-orange-500 flex flex-col items-center justify-center "
+          >
             <!-- Avatar and Name -->
-            <div class="flex items-center bg-slate-200">
+            <div class=" w-[40%] flex items-center gap-4">
               <div class="w-10 h-10 rounded-full overflow-hidden">
                 <img
                   src="/FE-CAT-projecte-1/img/foto-avatar.avif"
@@ -347,69 +344,70 @@
                   class="rounded-full w-full h-full"
                 />
               </div>
-              <div class="ml-4">
+              <div class=>
                 <p class="text-sm text-gray-900">Sanoj Dilshan</p>
               </div>
             </div>
             <!-- Title -->
-            <div class="mt-4 bg-slate-200">
+            <div class="w-[40%] flex items-center">
               <p
-                class="text-md font-semibold text-2xl text-gray-900 capitalize sm:whitespace-nowrap"
+                class="text-md font-semibold text-2xl text-gray-900 capitalize whitespace-nowrap"
               >
                 gaming platform - web design
               </p>
             </div>
             <!-- Design File -->
-            <div class="flex justify-center mt-4 items-center gap-5 bg-slate-200">
-              <p class="text-icons mt-4">Design file</p>
-              <ul class="mt-4 list-disc flex gap-6 text-gray-500 text-xs">
-                <li>
-                  <button class="flex items-center">
-                    <i class="text-icons fa-regular fa-heart"></i>
-                    <span class="text-icons ml-2">155</span>
-                  </button>
-                </li>
+            <div class="flex justify-center items-center gap-6 mt-2 text-xs bg-slate-200">
+              <p class="text-icons ">Design file</p>
+              <!-- Likes and users -->
+              <div class="flex  ml-1">
+                <ul class="list-disc flex gap-6 text-gray-500 ">
+                  <li>
+                    <button class="flex items-center">
+                      <i class="text-icons fa-regular fa-heart"></i>
+                      <span class="text-icons ml-2">155</span>
+                    </button>
+                  </li>
 
-                <li>
-                  <button class="flex items-center">
-                    <i class="text-icons fa-regular fa-user"></i>
-                    <span class="text-icons ml-2">5k users</span>
-                  </button>
-                </li>
-              </ul>
-              <div>
+                  <li>
+                    <button class="flex items-center">
+                      <i class="text-icons fa-regular fa-user"></i>
+                      <span class="text-icons ml-2">5k users</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
-              <div class="flex justify-center mt-4 sm:justify-start">
-                <a href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design" target="_blank" title="pagina del proyecto original">
-                    <button class="text-white bg-slate-500 hover:bg-slate-700 px-4 py-2 rounded-md mr-4">Open in Figma</button>
-                </a>
-              </div>
-            
-              
-          
-          
-         
+            <div class=" w-[40%] flex items-center">
+            <a
+              href="https://www.figma.com/community/file/1058773912152023976/gaming-platform-web-design"
+              target="_blank"
+              title="pagina del proyecto original"
+            >
+              <button
+                class="text-white bg-slate-400 hover:bg-slate-600 mt-5 px-4 py-2 rounded-md mr-4"
+              >
+                Open in Figma
+              </button>
+            </a>
           </div>
-       
-      </div>
+          </div>
+        </section>
         <!-- section 2 -->
-      <div class="w-[60%] bg-slate-100 hidden sm:block">
-        <div class="flex justify-center ml-20 ">
-        <section class=" flex mt-20 ">
-          <div class="w-70 h-50 mr-40 ">
+        <section class="w-[60%] bg-amber-300 flex justify-center">
+          <div class="flex justify-start items-end">
             <img
               src="/FE-CAT-projecte-1/img/section 2.png"
               alt="imagen-section2"
-              class="rounded-md object-cover w-full h-full]"
+              class="rounded-md object-cover w-[80%] h-[40%]]"
             />
           </div>
         </section>
       </div>
-    </div>
-      </div>
-      <div class="flex items-start h-[6vh] bg-white  ">
-        <ul class="ml-40 flex gap-5">
+      <!-- about y comments -->
+      <div class="flex flex-col justify-center items-start w-full bg-indigo-500">
+      
+        <ul class=" text-sm flex gap-5 justify-center w-[75vh] h-10 bg-lime-400">
           <li class="text-black font-semibold underline">
             <a href="#navbar">About</a>
           </li>
@@ -418,17 +416,19 @@
             ><span class="text-slate-400">11</span>
           </li>
         </ul>
-      </div>
+      
       <div class="h-[1px] w-full bg-gray-300 shadow-xl"></div>
-      <div class="text-sm ml-40  mt-4">
+      <div class=" bg-green-800 flex flex-col w-full">
+        
+      <p class=" bg-amber-500 text-sm flex justify-center items-center w-[77vw] h-10">
         Gaming Platform Web Design is a simple, professional Landing Page UI Kit
         for business, agency, company, apps, or digital product.
-      </div>
-      <div id="comments">
-        <ul class="flex items-center justify-center ml-14 w-[84%]">
-          <li class="flex mt-10 w-[87%]">
+      </p>
+      <div id="comments" class="flex flex-col w-full bg-sky-200">
+        <ul class=" bg-blue-800 w-full flex items-center justify-center ">
+          <li class=" bg-red-700 flex w-[75vw] ">
             <form
-              class="w-[72%] h-10 flex items-center gap-5 border border-slate-400 rounded-md px-4 py-2"
+              class=" bg-yellow-200 mt-5 w-[118vh] h-10 flex items-center gap-1 border border-slate-400 rounded-md px-4 py-2"
             >
               <!-- Logo -->
               <img
@@ -452,195 +452,276 @@
           </li>
         </ul>
       </div>
-      <p class="text-xs font-semibold mt-4 ml-36 sm:ml-">11 comments</p>
-
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <p class="text-xs bg-yellow-900 font-semibold mt-2 w-[28vw] flex justify-center">11 comments</p>
+<div class="comentario1">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/1.avif" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rajma Nazer</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@rajmanazer</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Rajma Nazer</p></li>
+        <li><p class=" text-xs text-gray-400">@rajmanazer</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>6 months ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">great job</p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-purple-200 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm">great job</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+   
+    <div class="comentario2">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/a.jpeg" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">darkhan</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@darkhan2</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">darkhan</p></li>
+        <li><p class=" text-xs text-gray-400">@darkhan2</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">
-        hello, everything turned out cool for you and do you have a photo of the
-        gamepad on the background in the homepage
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-purple-200 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm">hello, everything turned out cool for you and do you have a photo of the gamepad on the background in the homepage</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="comentario3">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/3.jpg" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Ayoub Sbai</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@ayoubsbai</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Ayoub Sbai</p></li>
+        <li><p class=" text-xs text-gray-400">@ayoubsbai</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">
-        do you have a mobile version please. I would be grateful!
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-purple-200 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm"> do you have a mobile version please. I would be grateful!</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="comentario4">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/4.jpg" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">
-          Andrej Horníček
-        </p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@andrejhornicek</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Andrej Horníček</p></li>
+        <li><p class=" text-xs text-gray-400">andrejhornicek</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">
-        How do I open The Image to Edit it to my needs ? Thank You !
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-amber-400 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm">  How do I open The Image to Edit it to my needs ? Thank You !</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="comentario5">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/5.jpg" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">nobodydev</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@nobodydev</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">nobodydev</p></li>
+        <li><p class=" text-xs text-gray-400">@nobodydev</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">thangs a lot sir</p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-amber-400 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm">  thanks a lot sir</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="comentario6">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button
-          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Sanoj Dilshan</p></li>
+        <li><p class=" text-xs text-gray-400">@Sanoj_Dilshan</p></li>
+        <li><button
+          class="bg-black text-white text-xs rounded-md w-16 h-5 capitalize"
         >
           creator
-        </button>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </button></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">
-        Thank you
-        <a
-          href="https://www.figma.com/@nobodydev"
-          target="_blank"
-          class="a-comments"
-          >@nobodydev</a
-        >
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-amber-400 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li> <p class="ml-48 text-sm"> Thank you
+          <a
+            href="https://www.figma.com/@nobodydev"
+            target="_blank"
+            class="a-comments"
+            >@nobodydev</a
+          >  </p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+    <div class="comentario7">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/emily.avif" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Adnane Riyadi</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@adnaneriyad</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Adnane Riyadi</p></li>
+        <li><p class=" text-xs text-gray-400">@adnaneriyad</p></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">Loved it, thank you for this design</p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
+      <div class="bg-amber-400 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li>   <p class="ml-48 text-sm"> Loved it, thank you for this design</p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
+      </div>
+    </div>
+      
+    <div class="comentario8">
+      <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+        <ul class="flex justify-center items-center gap-2">
+        <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
           <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button
-          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
+        </li>
+        <li><p class="text-sm font-medium text-gray-900">Sanoj Dilshan</p></li>
+        <li><p class=" text-xs text-gray-400">@Sanoj_Dilshan</p></li>
+        <li><button
+          class="bg-black text-white text-xs rounded-md w-16 h-5 capitalize"
         >
           creator
-        </button>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
+        </button></li>
+      </ul>
+        <ul class="list-disc  text-gray-400 text-xs">
           <li>1 year ago</li>
-        </ul>
       </div>
-      <p class="ml-48 text-sm">
-        Thank you<a
+      <div class="bg-amber-400 w-full">
+      </ul>
+      <ul class="flex flex-col justify-center">
+        <li> <p class="ml-48 text-sm"> Thank you
+          <a
           href="https://www.figma.com/@adnaneriyadi"
           target="_blank"
           class="a-comments"
           >@adnaneriyadi</a
         >
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/b.jpeg" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Rauliqbal</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@Rauliqbal</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
-          <li>2 years ago</li>
-        </ul>
+           </p></li>
+        <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+      </ul>
       </div>
-      <p class="ml-48 text-sm">
-        may i have permission to make it a landing page website?
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Sanoj Dilshan</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@Sanoj_Dilshan</p>
-        <button
-          class="bg-black text-white text-xs rounded-md ml-2 mt-3 w-16 h-5 capitalize"
-        >
-          creator
-        </button>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
-          <li>2 years ago</li>
+    </div>
+     
+      <div class="comentario9">
+        <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+          <ul class="flex justify-center items-center gap-2">
+          <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
+            <img src="/FE-CAT-projecte-1/img/b.jpeg" alt="Avatar" />
+          </li>
+          <li><p class="text-sm font-medium text-gray-900">Rauliqbal</p></li>
+          <li><p class=" text-xs text-gray-400">@Rauliqbal</p></li>
         </ul>
+          <ul class="list-disc  text-gray-400 text-xs">
+            <li>2 years ago</li>
+        </div>
+        <div class="bg-amber-400 w-full">
+        </ul>
+        <ul class="flex flex-col justify-center">
+          <li>   <p class="ml-48 text-sm"> may i have permission to make it a landing page website?</p></li>
+          <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+        </ul>
+        </div>
       </div>
-      <p class="ml-48 text-sm">
-        of course
-        <a
+     
+      <div class="comentario10">
+        <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+          <ul class="flex justify-center items-center gap-2">
+          <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
+            <img src="/FE-CAT-projecte-1/img/foto-avatar.avif" alt="Avatar" />
+          </li>
+          <li><p class="text-sm font-medium text-gray-900">Sanoj Dilshan</p></li>
+          <li><p class=" text-xs text-gray-400">@Sanoj_Dilshan</p></li>
+          <li><button
+            class="bg-black text-white text-xs rounded-md w-16 h-5 capitalize"
+          >
+            creator
+          </button></li>
+        </ul>
+          <ul class="list-disc  text-gray-400 text-xs">
+            <li>2 years ago</li>
+        </div>
+        <div class="bg-amber-400 w-full">
+        </ul>
+        <ul class="flex flex-col justify-center">
+          <li> <p class="ml-48 text-sm"> Of course
+            <a
           href="https://www.figma.com/@rauliqbal "
           target="_blank "
           class="a-comments"
           >@Rauliqbal</a
         >
         🤗
-      </p>
-      <div class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></div>
-      <div class="flex items-center">
-        <div class="ml-36 mt-5 w-10 h-10 rounded-full overflow-hidden">
-          <img src="/FE-CAT-projecte-1/img/c.webp" alt="Avatar" />
-        </div>
-        <p class="mt-4 ml-2 text-sm font-medium text-gray-900">Robert</p>
-        <p class="mt-4 ml-3 text-xs text-gray-400">@robertmenezes</p>
-        <ul class="list-disc ml-7 mt-4 text-gray-400 text-xs">
-          <li>2 years ago</li>
+             </p></li>
+          <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
         </ul>
-      </div>
-      <p class="ml-48 text-sm">Nice work 👏</p>
-      <div class="h-px bg-gray-500 w-[49%] ml-48 my-3 mx-32"></div>
+        </div>
+        <div class="comentario11">
+          <div class=" w-[136vh] h-[12vh] bg-amber-900 flex items-center justify-start ml-44 gap-5">
+            <ul class="flex justify-center items-center gap-2">
+            <li class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden">
+              <img src="/FE-CAT-projecte-1/img/c.webp" alt="Avatar" />
+            </li>
+            <li><p class="text-sm font-medium text-gray-900">Robert</p></li>
+            <li><p class=" text-xs text-gray-400">@robertmenezes</p></li>
+          </ul>
+            <ul class="list-disc  text-gray-400 text-xs">
+              <li>2 years ago</li>
+          </div>
+          <div class="bg-amber-400 w-full">
+          </ul>
+          <ul class="flex flex-col justify-center">
+            <li>   <p class="ml-48 text-sm"> Nice work 👏</p></li>
+            <li class="h-px bg-gray-300 w-[49%] ml-48 my-3 mx-32"></li>
+          </ul>
+          </div>
+        </div>
+       
+  </div>
       <div class="h-px bg-gray-500 w-[72vw] mt-20 ml-36 my-3 mx-32"></div>
     </main>
-
-    <footer class="h-[9%] bg-slate-600">
+<!-- footer -->
+    <footer class="h-[50vh] bg-blue-300">
       <div class="text-sm flex flex-wrap mt-8">
         <ul class="space-y-4 ml-44">
           <li class="font-semibold">Popular searches</li>
