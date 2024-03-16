@@ -54,6 +54,11 @@
  }
 
   }
+  .comments {
+    @apply md:w-[136vh] md:h-[12vh] bg-slate-200 flex items-center justify-start md:ml-44 gap-5
+
+  }
+
 
   
     
