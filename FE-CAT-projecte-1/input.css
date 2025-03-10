@@ -7,6 +7,9 @@
     .btn-nav {
         @apply py-2 px-5 flex items-center bg-white text-black font-semibold text-sm rounded-md  hover:bg-slate-200   focus:bg-slate-200 focus:border-transparent ;
     }
+    .a-Nav {
+      @apply text-slate-600 text-sm font-semibold block px-4 py-2 hover:bg-slate-400 hover:text-white  focus:bg-slate-400 focus:text-white
+    }
     .text-icons {
         @apply  text-slate-500 text-sm
     }
@@ -20,9 +23,7 @@
       #navMenu:hover {
         display: block;
       }
-      .a-Nav {
-        @apply text-slate-600 text-sm font-semibold block px-4 py-2 hover:bg-slate-400 hover:text-white  focus:bg-slate-400 focus:text-white
-      }
+     
       .menu-Nav {
         @apply absolute hidden bg-white rounded mt-2 py-2 w-56 text-gray-300 z-10 shadow-md
       }
